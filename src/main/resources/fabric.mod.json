@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "georoot",
+	"version": "${version}",
+	"name": "GeoRoot",
+	"description": "A safe-start Fabric worldgen mod skeleton.",
+	"authors": [
+		"GeoRoot contributors"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/georoot/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"georoot.hop.Georoot"
+		],
+		"client": [
+			"georoot.hop.client.GeorootClient"
+		],
+		"fabric-datagen": [
+			"georoot.hop.datagen.GeorootDataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
